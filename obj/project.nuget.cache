@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "VAy6BvBDpr0=",
+  "success": true,
+  "projectFilePath": "/home/runner/work/Plan-Checker-ICRU-62-83/Plan-Checker-ICRU-62-83/PlanCheckerICRU.csproj",
+  "expectedPackageFiles": [
+    "/tmp/codeql-scratch-d148f2592723e939/dbs/csharp/working/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/tmp/codeql-scratch-d148f2592723e939/dbs/csharp/working/packages/microsoft.netframework.referenceassemblies.net48/1.0.3/microsoft.netframework.referenceassemblies.net48.1.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

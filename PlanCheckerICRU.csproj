@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>PlanCheckerICRU</AssemblyName>
+    <RootNamespace>VMS.TPS</RootNamespace>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <!--
+      Eclipse ESAPI binary scripts must target x64 and .NET 4.8.
+      Update the HintPaths below (or the VMS_TPS_API_PATH environment
+      variable) to point to your Eclipse installation's API folder, e.g.:
+        C:\Program Files\Varian\RTM\16.1\esapi\API\
+    -->
+  </PropertyGroup>
+
+  <!--
+    ── ESAPI Reference ──────────────────────────────────────────────
+    Set the VMS_TPS_API_PATH environment variable to the folder that
+    contains VMS.TPS.Common.Model.API.dll, or adjust the HintPath
+    below to the absolute path on your workstation.
+
+    Typical locations:
+      Eclipse 15.x  →  C:\Program Files\Varian\RTM\15.6\esapi\API\
+      Eclipse 16.x  →  C:\Program Files\Varian\RTM\16.1\esapi\API\
+      Eclipse 17.x  →  C:\Program Files\Varian\RTM\17.0\esapi\API\
+  -->
+  <ItemGroup>
+    <Reference Include="VMS.TPS.Common.Model.API">
+      <HintPath>$(VMS_TPS_API_PATH)\VMS.TPS.Common.Model.API.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VMS.TPS.Common.Model.Types">
+      <HintPath>$(VMS_TPS_API_PATH)\VMS.TPS.Common.Model.Types.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
